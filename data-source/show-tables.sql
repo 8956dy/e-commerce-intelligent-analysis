@@ -1,3 +1,5 @@
-CREATE DATABASE IF NOT EXISTS sales_analysis_db
-DEFAULT CHARACTER SET utf8mb4
-COLLATE utf8mb4_general_ci;
+SELECT
+    TABLE_NAME,
+    TABLE_COMMENT
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'sales_analysis_db';

@@ -1,5 +1,7 @@
 SELECT
-    TABLE_NAME,
-    TABLE_COMMENT
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = 'sales_analysis_db';
+    COLUMN_NAME,
+    COLUMN_TYPE,
+    COLUMN_COMMENT
+FROM information_schema.COLUMNS
+WHERE TABLE_NAME = 'user'
+  AND TABLE_SCHEMA = 'sales_analysis_db';
